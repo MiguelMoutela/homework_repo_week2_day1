@@ -8,21 +8,24 @@ class Team
 
 
  # GETTER METHODS
-  #
-  # def name
-  #
-  #   return @name
-  #
-  # end
-  #
-  # def players
-  #
-  #   return @cohort
-  #
-  # end
-  #
-  # def coach
-  #
-  #   return @coach
-  #end
+
+  def name
+
+    return @name
+
+  end
+
+  def players
+
+    return @players
+
+  end
+
+  def coach
+
+    return @coach
+
+  end
+
+
 end

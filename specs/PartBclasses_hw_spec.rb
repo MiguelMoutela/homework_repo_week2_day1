@@ -4,11 +4,11 @@ require_relative('../PartBclasses_hw.rb')
 
 class TestTeam< Minitest::Test
 
-   @Team
+   @team
 
     def setup
 
-      @Team = Team.New("The16's", [Player1, Player2, Player3], "Coach")
+      @team = Team.new("The16's", ["Player1", "Player2", "Player3"], "Coach")
 
     end
 
@@ -20,7 +20,7 @@ class TestTeam< Minitest::Test
 
     def test_players
 
-      assert_equal([Player1, Player2, Player3], @team.players)
+      assert_equal(["Player1", "Player2", "Player3"], @team.players)
 
     end
 
