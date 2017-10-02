@@ -37,4 +37,10 @@ class TestTeam< Minitest::Test
 
     end
 
+
+    def add_player
+
+      assert_equal(true, @team.include?("new_player"))
+
+    end
 end

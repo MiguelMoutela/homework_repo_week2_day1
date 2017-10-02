@@ -1,8 +1,9 @@
 class Team
 
-  attr_reader(:name :players :coach)
+  # attr_accessor(:name, :players, :coach)
   #players and coaches come and go; team names do not change
-  attr_accessor(:players :coach)
+  attr_accessor(:players, :coach)
+  attr_reader(:name)
 
   def initialize(input_name, input_players, input_coach)
     @name = input_name
@@ -31,13 +32,20 @@ class Team
 #
 #   end
 #
-# # GETTER METHODS
-#
-#   def set_coach(coach)
-#
-#     @coach = coach
-#
-#   end
+# GETTER METHODS
+  #
+  # def set_coach(coach)
+  #
+  #   @coach = coach
+  #
+  # end
+
+  def add_player(new_player)
+
+      @team.players.push("new_player")
+
+  end
+
 
 
 end
