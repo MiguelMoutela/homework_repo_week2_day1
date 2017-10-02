@@ -27,5 +27,13 @@ class Team
 
   end
 
+# GETTER METHODS
+
+  def set_coach(coach)
+
+    @coach = coach
+
+  end
+
 
 end

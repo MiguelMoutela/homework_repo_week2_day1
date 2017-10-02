@@ -31,6 +31,10 @@ class TestTeam< Minitest::Test
 
     end
 
+    def test_set_coach
 
+      assert_equal("Coach", @team.coach)
+
+    end
 
 end
