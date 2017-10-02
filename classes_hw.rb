@@ -43,6 +43,14 @@ class Student
 
   end
 
+
+  def talk
+
+    return "I can talk"
+
+  end
+
+
   #   def set_amount(value)
   #
   #     @amount = value

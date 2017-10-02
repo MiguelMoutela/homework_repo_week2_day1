@@ -37,4 +37,9 @@ class TestStudent < Minitest::Test
     assert_equal(16, @student.cohort)
 
   end
+
+  def test_talk
+    assert_equal("I can talk", @student.talk())
+  end
+
 end
