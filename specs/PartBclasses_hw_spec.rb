@@ -38,9 +38,16 @@ class TestTeam< Minitest::Test
     end
 
 
-    def add_player
+    def test_add_player
 
-      assert_equal(true, @team.include?("new_player"))
+      assert_equal(["Player1", "Player2", "Player3", "new_player"], @team.add_player("new_player"))
+
+    end
+
+    def test_check_player
+
+     assert_equal(true, @team.players.include?("new_player"))
+
 
     end
 end
