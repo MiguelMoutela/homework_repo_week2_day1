@@ -2,14 +2,35 @@ require('minitest/autorun')
 require('minitest/rg')
 require_relative('../PartBclasses_hw.rb')
 
-class TestStudent < Minitest::Test
+class TestTeam< Minitest::Test
 
-@Team
+   @Team
 
-  def setup
+    def setup
 
-    @Team = Team.New("The16's", [Player1, Player2, Player3], "Coach")
+      @Team = Team.New("The16's", [Player1, Player2, Player3], "Coach")
 
-  end
+    end
+
+    def test_name
+
+      assert_equal("The16's", @team.name)
+
+    end
+
+    def test_players
+
+      assert_equal([Player1, Player2, Player3], @team.players)
+
+    end
+
+    def test_coach
+
+      assert_equal("Coach", @team.coach)
+
+
+    end
+
+
 
 end
