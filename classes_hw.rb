@@ -37,6 +37,12 @@ class Student
 
   end
 
+  def set_cohort(cohort)
+
+    @cohort = cohort
+
+  end
+
   #   def set_amount(value)
   #
   #     @amount = value
