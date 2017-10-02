@@ -1,6 +1,6 @@
 require('minitest/autorun')
 require('minitest/rg')
-require_relative('../classes_hw.rb')
+require_relative('../PartAclasses_hw.rb')
 
 class TestStudent < Minitest::Test
 
