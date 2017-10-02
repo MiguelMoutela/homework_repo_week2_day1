@@ -1,8 +1,8 @@
 class Student
 
-  def initialize(name, cohort)
-    @name = name
-    @cohort = cohort
+  def initialize(input_name, input_cohort)
+    @name = input_name
+    @cohort = input_cohort
   end
 
 
@@ -29,13 +29,14 @@ class Student
   # # these are setters
   # # used to change the setters
   #
-  #
-  #   def set_holder_name(name)
-  #
-  #     @holder_name = name
-  #
-  #   end
-  #
+  ## SETTER METHODS
+
+  def set_name(name)
+
+    @name = name
+
+  end
+
   #   def set_amount(value)
   #
   #     @amount = value
